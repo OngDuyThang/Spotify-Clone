@@ -11,9 +11,9 @@ export default function useOnPlay(songs: Song[]) {
     const subscribeModal = useSubscribeModal()
 
     function onPlay(id: string) {
-        if (!user) return authModal.onOpen()
+        // if (!user) return authModal.onOpen()
 
-        if (!subscription) return subscribeModal.onOpen()
+        // if (!subscription) return subscribeModal.onOpen()
 
         player.setId(id)
         player.setIds(songs.map(song => song.id))
